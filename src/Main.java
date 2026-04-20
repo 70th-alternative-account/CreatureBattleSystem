@@ -2,8 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         // set up the creatures
-        Creature a = new Creature();
-        Creature b = new Creature();
+        //Creature a = new Creature();
+        //Creature b = new Creature();
+        ArmouredCreature a = new ArmouredCreature();
+        Deadlander b = new Deadlander();
         a.name = "A";
         a.health = 100;
         b.name = "B";
