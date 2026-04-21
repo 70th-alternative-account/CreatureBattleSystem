@@ -2,16 +2,16 @@ public class Reaper extends Creature {
     // zero miss chance
     // atk increased from 10-20 to 15-45
     // zero defend chance
-    private int cooldown = 1;
+    private int charge = 1;
 
 
     // Returns the damage done by the Creature
     @Override
     public float attack() {
 
-        if (cooldown == 0) {
-            // reset cooldown
-            cooldown = 1;
+        if (charge == 0) {
+
+            charge = 1;
 
             // do damage
             float power = Rand.randomFloat(15, 45);
@@ -19,8 +19,7 @@ public class Reaper extends Creature {
             return power;
         }
 
-        // update timer
-        cooldown -= 1;
+        charge -= 1;
         action = name + " waits patiently.";
         return 0;
 

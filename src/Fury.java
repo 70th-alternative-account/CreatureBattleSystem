@@ -1,7 +1,7 @@
 public class Fury extends Creature{
     // when below half hp:
-    // atk does 50% more dmg
-    // fury also takes 20% of that damage itself
+    // 1.5x atk multiplier
+    // fury also takes 20% of that damage itself, after multiplier
 
 
     public float attack() {
