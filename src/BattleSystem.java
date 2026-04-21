@@ -22,7 +22,7 @@ public class BattleSystem {
         int id;
 
         if (random) {
-            id = Rand.randomInt(0, 8);
+            id = Rand.randomInt(0, 9);
         }
         else {
             id = 0;
@@ -53,6 +53,9 @@ public class BattleSystem {
                 break;
             case 7:
                 c = new Everlasting();
+                break;
+            case 8:
+                c = new Bomb();
                 break;
             default:
                 c = new Creature();
