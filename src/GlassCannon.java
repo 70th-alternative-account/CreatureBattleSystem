@@ -1,6 +1,6 @@
 public class GlassCannon extends Creature {
     // damage increased from 10-20 to 32-64
-    // defend change increased from 10% to 20%
+    // defend chance increased from 10% to 20%
     // receives 4x more damage when not defending
 
 

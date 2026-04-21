@@ -29,7 +29,7 @@ public class BattleSystem {
             // remind me later
         }
 
-        System.out.println(id);
+
 
         switch (id) {
 
