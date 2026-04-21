@@ -5,12 +5,12 @@ public class Main {
         // set up the creatures
         //Creature a = new Creature();
         //Creature b = new Creature();
-        Creature a = new ArmouredCreature();
-        Creature b = new Deadlander();
-        a.name = "A";
-        a.health = 100;
-        b.name = "B";
-        b.health = 100;
+        Creature a = BattleSystem.genCreature(true);
+        Creature b = BattleSystem.genCreature(true);
+//        a.name = "A";
+//        a.health = 100;
+//        b.name = "B";
+//        b.health = 100;
 
         // set up the battle
         BattleSystem battleSystem = new BattleSystem();

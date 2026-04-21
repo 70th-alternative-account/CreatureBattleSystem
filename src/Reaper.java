@@ -6,24 +6,27 @@ public class Reaper extends Creature {
 
 
     // Returns the damage done by the Creature
+    @Override
     public float attack() {
 
-        if(cooldown > 0) {
-            // update timer
-            cooldown -= 1;
-        }
-        
-        else {
+        if (cooldown == 0) {
             // reset cooldown
             cooldown = 1;
 
-            // otherwise, do damage between 20-50
-            float power = Rand.randomFloat(20, 50);
-            action = name + " attacked with power " + power + "!";
+            // do damage
+            float power = Rand.randomFloat(15, 45);
+            action = name + " struck hard with power " + power + "!";
             return power;
         }
+
+        // update timer
+        cooldown -= 1;
+        action = name + " waits patiently.";
+        return 0;
+
     }
 
+    @Override
     public void defend(float incomingPower) {
         action = name + " did not defend.";
         health -= incomingPower;

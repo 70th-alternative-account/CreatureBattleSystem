@@ -1,7 +1,7 @@
 public class ArmouredCreature extends Creature {
     // Miss chance increased from 20% to 30%
     // Damage decreased from 10-20 to 8-16
-    // Defend chance increased from 10% to 80%
+    // Defend chance increased from 10% to 90%
 
 
     public float attack() {
@@ -22,7 +22,7 @@ public class ArmouredCreature extends Creature {
     public void defend(float incomingPower) {
 
         // 80 % chance of reducing damage taken
-        if (Rand.randomInt(0, 10) < 8) {
+        if (Rand.randomInt(0, 10) < 9) {
             incomingPower = incomingPower * 0.8f;
             action = name + " defended and reduced damage taken to " + incomingPower;
         }

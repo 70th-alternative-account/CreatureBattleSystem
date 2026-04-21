@@ -7,7 +7,7 @@ public class Dummy extends Creature {
     @Override
     public float attack() {
 
-        action = name + "       !";
+        action = name + " is a dummy.";
         return 0;
 
     }
@@ -15,7 +15,7 @@ public class Dummy extends Creature {
     // dummies can't defend, dummy
     @Override
     public void defend(float incomingPower) {
-        action = name + " did not defend.";
+        action = name + " does not seem to notice.";
         health -= incomingPower;
     }
 }

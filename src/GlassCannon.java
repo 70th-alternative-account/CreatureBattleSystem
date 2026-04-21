@@ -29,7 +29,7 @@ public class GlassCannon extends Creature {
         else
         {
             incomingPower *= 4f;
-            action = name + " was caught off guard, taking " + incomingPower + " damage!";
+            action = name + " was defenseless, taking " + incomingPower + " damage!";
         }
 
         health -= incomingPower;
