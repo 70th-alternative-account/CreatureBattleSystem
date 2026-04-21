@@ -1,5 +1,5 @@
 public class BattleSystem {
-    public void battle(Creature a, Creature b) {
+    public static void battle(Creature a, Creature b) {
         while (a.health > 0 && b.health > 0) {
             float attackPower = a.attack();
             b.defend(attackPower);

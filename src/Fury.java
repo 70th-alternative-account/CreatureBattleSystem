@@ -20,7 +20,7 @@ public class Fury extends Creature{
             power *= 1.5f;
             float rebound = power * 0.2f;
             health -= rebound;
-            action = name + " attacked wildly with power " + power + ", taking " + rebound + " damage itself!";
+            action = name + " struck wildly with power " + power + ", taking " + rebound + " damage itself!";
         }
 
         return power;
