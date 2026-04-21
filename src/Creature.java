@@ -4,6 +4,10 @@ public class Creature {
     public String action;
 
 
+    public float act() {
+        return this.attack();
+    }
+
     // Returns the damage done by the Creature
     public float attack() {
 

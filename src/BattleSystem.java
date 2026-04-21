@@ -1,7 +1,7 @@
 public class BattleSystem {
     public static void battle(Creature a, Creature b) {
         while (a.health > 0 && b.health > 0) {
-            float attackPower = a.attack();
+            float attackPower = a.act();
             b.defend(attackPower);
             System.out.println(a.readAction());
             System.out.println(b.readAction());
@@ -22,7 +22,7 @@ public class BattleSystem {
         int id;
 
         if (random) {
-            id = Rand.randomInt(0, 7);
+            id = Rand.randomInt(0, 8);
         }
         else {
             id = 0;
@@ -50,6 +50,9 @@ public class BattleSystem {
                 break;
             case 6:
                 c = new Fury();
+                break;
+            case 7:
+                c = new Everlasting();
                 break;
             default:
                 c = new Creature();
