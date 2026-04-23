@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class Reaper extends Creature {
     // zero miss chance
     // atk increased from 10-20 to 15-45

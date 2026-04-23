@@ -1,3 +1,7 @@
+package logic;
+
+import util.Rand;
+
 public class Creature {
     public float health;
     public String name;

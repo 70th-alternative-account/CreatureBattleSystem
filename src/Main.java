@@ -1,3 +1,6 @@
+import logic.BattleSystem;
+import logic.Creature;
+
 public class Main {
 
     public static void main(String[] args) {

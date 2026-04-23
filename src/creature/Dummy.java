@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class Dummy extends Creature {
     // Dummy
     // Does not do anything, usually.

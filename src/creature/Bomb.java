@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class Bomb extends Creature {
     // It's a bomb.
 

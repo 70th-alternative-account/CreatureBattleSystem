@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class Everlasting extends Creature {
     // heal() action
     // when able to, 50% chance to heal 10-30 HP instead of attacking

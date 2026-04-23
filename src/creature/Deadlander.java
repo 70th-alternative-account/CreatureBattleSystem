@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class Deadlander extends Creature {
     // Changed chance of missing from 20% to 50%
     // Damage between 16-32

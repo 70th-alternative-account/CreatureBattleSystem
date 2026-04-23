@@ -1,3 +1,8 @@
+package logic;
+
+import util.Rand;
+import creature.*;
+
 public class BattleSystem {
     public static void battle(Creature a, Creature b) {
         while (a.health > 0 && b.health > 0) {

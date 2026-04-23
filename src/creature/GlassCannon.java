@@ -1,3 +1,8 @@
+package creature;
+
+import logic.Creature;
+import util.Rand;
+
 public class GlassCannon extends Creature {
     // damage increased from 10-20 to 32-64
     // defend chance increased from 10% to 20%
