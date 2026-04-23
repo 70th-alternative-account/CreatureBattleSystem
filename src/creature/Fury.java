@@ -1,12 +1,18 @@
+// when below half hp:
+// 1.5x atk multiplier
+// fury also takes 20% of that damage itself, after multiplier
+
 package creature;
 
 import logic.Creature;
 import util.Rand;
 
 public class Fury extends Creature {
-    // when below half hp:
-    // 1.5x atk multiplier
-    // fury also takes 20% of that damage itself, after multiplier
+
+    public Fury() {
+        super("Fury");
+    }
+
 
 
     public float attack() {

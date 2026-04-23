@@ -43,8 +43,8 @@ public class BattleSystem {
             default -> new Creature();
         };
 
-        c.name = String.valueOf(c.getClass());
-        c.health = 100;
+        //c.name = String.valueOf(c.getClass());
+        //c.health = 100;
 
         return c;
     }

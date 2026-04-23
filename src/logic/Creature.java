@@ -3,9 +3,21 @@ package logic;
 import util.Rand;
 
 public class Creature {
-    public float health;
-    public String name;
-    public String action;
+    protected float health;
+    protected String name;
+    protected String action;
+
+
+
+    public Creature(String name) {
+        this.name = name;
+        health = 100;
+    }
+
+    public Creature() {
+        this("Creature");
+    }
+
 
 
     public float act() {

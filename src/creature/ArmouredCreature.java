@@ -1,12 +1,18 @@
+// Miss chance increased from 20% to 30%
+// Damage decreased from 10-20 to 8-16
+// Defend chance increased from 10% to 90%
+
 package creature;
 
 import logic.Creature;
 import util.Rand;
 
 public class ArmouredCreature extends Creature {
-    // Miss chance increased from 20% to 30%
-    // Damage decreased from 10-20 to 8-16
-    // Defend chance increased from 10% to 90%
+
+    public ArmouredCreature() {
+        super("ArmouredCreature");
+    }
+
 
 
     public float attack() {

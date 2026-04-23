@@ -1,14 +1,19 @@
+// It's a bomb.
+
+// on turn 8,
+// does 100-200 damage to enemy and self
+
 package creature;
 
 import logic.Creature;
 import util.Rand;
 
 public class Bomb extends Creature {
-    // It's a bomb.
-
-    // on turn 8,
-    // does 100-200 damage to enemy and self
     private int charge = 7;
+
+    public Bomb() {
+        super("Bomb");
+    }
 
 
     @Override

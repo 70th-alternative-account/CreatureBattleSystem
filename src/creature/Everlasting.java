@@ -1,12 +1,18 @@
+// heal() action
+// when able to, 50% chance to heal 10-30 HP instead of attacking
+// locked for 2 turns after every use
+
 package creature;
 
 import logic.Creature;
 import util.Rand;
 
 public class Everlasting extends Creature {
-    // heal() action
-    // when able to, 50% chance to heal 10-30 HP instead of attacking
-    // locked for 2 turns after every use
+
+    public Everlasting() {
+        super("Everlasting");
+    }
+
 
 
     private int cooldown = 2;

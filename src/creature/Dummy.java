@@ -1,13 +1,19 @@
+// Dummy
+// Does not do anything, usually.
+
+// 1% chance to deal 999 damage because why not
+
 package creature;
 
 import logic.Creature;
 import util.Rand;
 
 public class Dummy extends Creature {
-    // Dummy
-    // Does not do anything, usually.
 
-    // 1% chance to deal 999 damage because why not
+    public Dummy() {
+        super("Dummy");
+    }
+
 
 
     // dummies can't attack, dummy
