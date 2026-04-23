@@ -22,49 +22,26 @@ public class BattleSystem {
         }
     }
 
-    public static Creature genCreature(boolean random) {
+    public static Creature genCreature() {
         Creature c;
         int id;
 
-        if (random) {
-            id = Rand.randomInt(0, 9);
-        }
-        else {
-            id = 0;
-            // remind me later
-        }
+        id = Rand.randomInt(0, 9);
 
 
 
-        switch (id) {
-
-            case 1:
-                c = new Deadlander();
-                break;
-            case 2:
-                c = new Dummy();
-                break;
-            case 3:
-                c = new ArmouredCreature();
-                break;
-            case 4:
-                c = new GlassCannon();
-                break;
-            case 5:
-                c = new Reaper();
-                break;
-            case 6:
-                c = new Fury();
-                break;
-            case 7:
-                c = new Everlasting();
-                break;
-            case 8:
-                c = new Bomb();
-                break;
-            default:
-                c = new Creature();
-        }
+        // awesome code
+        c = switch (id) {
+            case 1 -> new Deadlander();
+            case 2 -> new Dummy();
+            case 3 -> new ArmouredCreature();
+            case 4 -> new GlassCannon();
+            case 5 -> new Reaper();
+            case 6 -> new Fury();
+            case 7 -> new Everlasting();
+            case 8 -> new Bomb();
+            default -> new Creature();
+        };
 
         c.name = String.valueOf(c.getClass());
         c.health = 100;

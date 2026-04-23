@@ -13,8 +13,8 @@ public class Main {
 //        b.name = String.valueOf(b.getClass());
 //        b.health = 100;
 
-        Creature a = BattleSystem.genCreature(true);
-        Creature b = BattleSystem.genCreature(true);
+        Creature a = BattleSystem.genCreature();
+        Creature b = BattleSystem.genCreature();
 
         // run the battle
         BattleSystem.battle(a, b);
